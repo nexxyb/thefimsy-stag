@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container shadow"
+         style="max-width: 640px; margin: auto; margin-top: 2em; padding: 2em">
+        <h4>To generate a report, please click the button below:</h4>
+        <a class="btn btn-success" href="{% url 'project-report' %} ">Report</a>
+    </div>
+{% endblock %}

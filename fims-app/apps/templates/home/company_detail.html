@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container-fluid py-4">
+  <h3>Company Details</h3>
+  <table class="table">
+    <tr>
+      <td><strong>Company Name:</strong></td>
+      <td>{{ company.name.title }}</td>
+    </tr>
+    <tr>
+      <td><strong>Company Code:</strong> </td>
+      <td> {{ company.code }}</td>
+    </tr>
+    
+    </table>
+</div>  
+<div>
+    <p class="lead"> Give the company code to employees to update their profile after signup for them to contribute to projects</p> 
+{% endblock %} 
