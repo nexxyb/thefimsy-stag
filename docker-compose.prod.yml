@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build:
-      context: ./app
+      context: ./fims-app
       dockerfile: Dockerfile.prod
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
     volumes:
